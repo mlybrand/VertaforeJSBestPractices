@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+	var result = window.matchMedia("(max-width: 700px)");
+	result.addListener(function(match) {
+		if (match.media === "(max-width: 700px)") {
+			if (match.matches) {
+				console.log("It matches now!");
+			} else {
+				console.log("It doesn't match anymore.");
+			}
+		}
+	})
+	</script>
+</body>
+</html>
